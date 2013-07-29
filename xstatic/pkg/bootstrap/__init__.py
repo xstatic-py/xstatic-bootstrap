@@ -39,5 +39,32 @@ BASE_DIR = join(dirname(__file__), 'data')
 #BASE_DIR = '/usr/share/bootstrap'
 
 LOCATIONS = {
+    # CDN locations (if no public CDN exists, use an empty dict)
+    # if value is a string, it is a base location, just append relative
+    # path/filename. if value is a dict, do another lookup using the
+    # relative path/filename you want.
+    # your relative path/filenames should usually be without version
+    # information, because either the base dir/url is exactly for this
+    # version or the mapping will care for accessing this version.
+    ('cdnjs', 'http'): {
+        'bootstrap/css/bootstrap.css': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.css' % VERSION,
+        'bootstrap/css/bootstrap.min.css': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.min.css' % VERSION,
+        'bootstrap/css/bootstrap-responsive.css': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap-responsive.css' % VERSION,
+        'bootstrap/css/bootstrap-responsive.min.css': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap-responsive.min.css' % VERSION,
+        'bootstrap/js/bootstrap.js': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.js' % VERSION,
+        'bootstrap/js/bootstrap.min.js': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.min.js' % VERSION,
+        'bootstrap/img/glyphicons-halflings.png': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/img/glyphicons-halflings.png' % VERSION,
+        'bootstrap/img/glyphicons-halflings-white.png': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/img/glyphicons-halflings-white.png' % VERSION,
+    },
+    ('cdnjs', 'https'): {
+        'bootstrap/css/bootstrap.css': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.css' % VERSION,
+        'bootstrap/css/bootstrap.min.css': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.min.css' % VERSION,
+        'bootstrap/css/bootstrap-responsive.css': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap-responsive.css' % VERSION,
+        'bootstrap/css/bootstrap-responsive.min.css': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap-responsive.min.css' % VERSION,
+        'bootstrap/js/bootstrap.js': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.js' % VERSION,
+        'bootstrap/js/bootstrap.min.js': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.min.js' % VERSION,
+        'bootstrap/img/glyphicons-halflings.png': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/img/glyphicons-halflings.png' % VERSION,
+        'bootstrap/img/glyphicons-halflings-white.png': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/img/glyphicons-halflings-white.png' % VERSION,
+    },
 }
 
