@@ -47,16 +47,16 @@ LOCATIONS = {
     # information, because either the base dir/url is exactly for this
     # version or the mapping will care for accessing this version.
     ('cdnjs', 'http'): {
-        'bootstrap/css/bootstrap.css': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.css' % VERSION,
-        'bootstrap/css/bootstrap.min.css': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.min.css' % VERSION,
-        'bootstrap/js/bootstrap.js': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.js' % VERSION,
-        'bootstrap/js/bootstrap.min.js': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.min.js' % VERSION,
+        'css/bootstrap.css': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.css' % VERSION,
+        'css/bootstrap.min.css': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.min.css' % VERSION,
+        'js/bootstrap.js': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.js' % VERSION,
+        'js/bootstrap.min.js': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.min.js' % VERSION,
     },
     ('cdnjs', 'https'): {
-        'bootstrap/css/bootstrap.css': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.css' % VERSION,
-        'bootstrap/css/bootstrap.min.css': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.min.css' % VERSION,
-        'bootstrap/js/bootstrap.js': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.js' % VERSION,
-        'bootstrap/js/bootstrap.min.js': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.min.js' % VERSION,
+        'css/bootstrap.css': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.css' % VERSION,
+        'css/bootstrap.min.css': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.min.css' % VERSION,
+        'js/bootstrap.js': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.js' % VERSION,
+        'js/bootstrap.min.js': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.min.js' % VERSION,
     },
 }
 
