@@ -11,7 +11,7 @@ NAME = __name__.split('.')[-1] # package name (e.g. 'foo' or 'foo_bar')
                                # please use a all-lowercase valid python
                                # package name
 
-VERSION = '2.3.2' # version of the packaged files, please use the upstream
+VERSION = '3.0.0' # version of the packaged files, please use the upstream
                   # version number
 BUILD = '1' # our package build number, so we can release new builds
              # with fixes for xstatic stuff.
@@ -49,22 +49,14 @@ LOCATIONS = {
     ('cdnjs', 'http'): {
         'bootstrap/css/bootstrap.css': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.css' % VERSION,
         'bootstrap/css/bootstrap.min.css': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.min.css' % VERSION,
-        'bootstrap/css/bootstrap-responsive.css': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap-responsive.css' % VERSION,
-        'bootstrap/css/bootstrap-responsive.min.css': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap-responsive.min.css' % VERSION,
         'bootstrap/js/bootstrap.js': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.js' % VERSION,
         'bootstrap/js/bootstrap.min.js': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.min.js' % VERSION,
-        'bootstrap/img/glyphicons-halflings.png': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/img/glyphicons-halflings.png' % VERSION,
-        'bootstrap/img/glyphicons-halflings-white.png': 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/img/glyphicons-halflings-white.png' % VERSION,
     },
     ('cdnjs', 'https'): {
         'bootstrap/css/bootstrap.css': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.css' % VERSION,
         'bootstrap/css/bootstrap.min.css': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap.min.css' % VERSION,
-        'bootstrap/css/bootstrap-responsive.css': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap-responsive.css' % VERSION,
-        'bootstrap/css/bootstrap-responsive.min.css': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/css/bootstrap-responsive.min.css' % VERSION,
         'bootstrap/js/bootstrap.js': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.js' % VERSION,
         'bootstrap/js/bootstrap.min.js': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/js/bootstrap.min.js' % VERSION,
-        'bootstrap/img/glyphicons-halflings.png': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/img/glyphicons-halflings.png' % VERSION,
-        'bootstrap/img/glyphicons-halflings-white.png': 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/img/glyphicons-halflings-white.png' % VERSION,
     },
 }
 
