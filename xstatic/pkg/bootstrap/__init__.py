@@ -11,9 +11,9 @@ NAME = __name__.split('.')[-1] # package name (e.g. 'foo' or 'foo_bar')
                                # please use a all-lowercase valid python
                                # package name
 
-VERSION = '4.5.3' # version of the packaged files, please use the upstream
+VERSION = '5.3.8' # version of the packaged files, please use the upstream
                   # version number
-BUILD = '1' # our package build number, so we can release new builds
+BUILD = '0' # our package build number, so we can release new builds
              # with fixes for xstatic stuff.
 PACKAGE_VERSION = VERSION + '.' + BUILD # version used for PyPi
 
@@ -46,8 +46,7 @@ LOCATIONS = {
     # your relative path/filenames should usually be without version
     # information, because either the base dir/url is exactly for this
     # version or the mapping will care for accessing this version.
-    ('cdnjs', 'http'): 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/' % VERSION,
-    ('cdnjs', 'https'): 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/%s/' % VERSION,
+    ('cdnjs', 'https'): 'https://cdnjs.cloudflare.com/ajax/libs/bootstrap/%s/' % VERSION,
     ('jsdelivr', 'https'): 'https://cdn.jsdelivr.net/npm/bootstrap@%s/dist/' % VERSION,
 }
 
